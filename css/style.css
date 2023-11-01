@@ -1,0 +1,269 @@
+.inner {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    border-bottom: 1px solid #ddd;
+    transition: 0.5s;
+}
+
+.header.on {
+    background: #fff;
+}
+
+.header:hover {
+    background: #fff;
+}
+
+.header:hover .gnb>ul>li>a {
+    color: #333
+}
+
+.header .gnb>ul>li>ul>li>a:hover {
+    color: #ff4747;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.header.on .inner {
+    line-height: 80px;
+}
+
+
+.header .gnb>ul {
+    display: flex;
+}
+
+
+.header .gnb>ul>li>a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header .gnb ul {
+    color: #000;
+}
+
+.header .gnb ul ul {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    line-height: 40px;
+
+    transition: 0.5s;
+
+}
+
+.header:hover .gnb ul ul {
+    height: 230px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    padding: 0 50px;
+    font-size: 14px;
+}
+
+
+.header .gnb>ul>li a {
+    display: block;
+    text-align: center;
+}
+
+
+.mainSlide .itm {
+    position: relative;
+}
+
+
+.mainSlide .itm01 {
+    width: 2000px;
+    height: 700px;
+    background: url(../images/vi_01.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .itm02 {
+    width: 2000px;
+    height: 700px;
+    background: url(../images/vi_02.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .itm03 {
+    width: 2000px;
+    height: 700px;
+    background: url(../images/vi_03.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .slogen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mainSlide .itm01 .slogen>strong {
+    display: block;
+    margin: 0 0 24px 0;
+
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+
+}
+
+.mainSlide .itm02 .slogen>strong {
+    display: block;
+    margin: 0 0 24px 0;
+
+    color: #000;
+    font-size: 42px;
+    font-weight: 700;
+
+}
+
+.mainSlide .itm03 .slogen>strong {
+    display: block;
+    margin: 0 0 24px 0;
+
+    color: #000;
+    font-size: 42px;
+    font-weight: 700;
+
+}
+
+
+.mainSlide .itm01 .slogen>p {
+    display: block;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.mainSlide .itm02 .slogen>p {
+    display: block;
+
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.mainSlide .itm03 .slogen>p {
+    display: block;
+
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.mainVisual {
+    position: relative;
+    margin: 0 0 180px 0;
+}
+
+.mainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+.mainVisual .arrows i {
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 #000;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.mainVisual .arrows .left {
+    left: -16%;
+}
+
+.mainVisual .arrows .right {
+    right: -16%;
+}
+
+.mainVisual .num {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin: 0 0 0 585px;
+    transform: translate(-100%, 0);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.mainEvent {
+    /* padding: 120px 0; */
+
+}
+
+.mainEvent .innerContant {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 160px auto;
+    gap: 30px;
+}
+
+.mainEvent .innerContant figure {
+    flex: 1;
+}
+
+.mainEvent .innerContant .img_box {
+    overflow: hidden;
+}
+
+.mainEvent .img_box img {
+    transition: 1s;
+
+}
+
+.mainEvent .img_box:hover img {
+    transform: scale(1.2);
+}
+
+.mainEvent .innerContant strong {
+    display: block;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
